@@ -2,7 +2,7 @@ import { ThreeDots } from 'react-loader-spinner';
 import styled from 'styled-components';
 import { useState } from 'react';
 import logo from '../assets/images/logo.png';
-import Button from './Button';
+import Button from '../shared/Button';
 
 
 export default function LoginPage () {
@@ -50,7 +50,7 @@ const Container = styled.div`
     
     width: 100vw;
     height: 100vh;
-    background-color: #000022;
+    background-color: #07004d;
     
     img {
         width: 360px;

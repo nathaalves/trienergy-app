@@ -11,7 +11,7 @@ const Button = styled.button`
     width: 300px;
     height: 45px;
     border-radius: 5px;
-    margin-bottom: 25px;
+    margin: 25px 0;
     opacity: ${props => props.isActive ? 1 : 0.7};
     background-color: #086788;
 

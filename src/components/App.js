@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "../shared/GlobalStyle";
 import LoginPage from "./LoginPage";
-
-
+import ProposalsPage from "./ProposalsPage";
+import FormProposal from "./FormProposal";
 
 export default function App () {
 
@@ -12,8 +12,9 @@ export default function App () {
         <GlobalStyle />
             <Routes>
                 <Route path="/" element={<LoginPage />} />
-                <Route path="/orcamentos" />
+                <Route path="/propostas" element={<ProposalsPage />} />
                 <Route path="/projetos" />
+                <Route path="/form-proposta" element={<FormProposal />} />
                 <Route path="/lembretes" />
                 <Route path="/contratos" />
                 <Route path="/pos-venda" />
