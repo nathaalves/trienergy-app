@@ -15,7 +15,7 @@ export default function FormProposal () {
         "roof": '',
         "inverterType": '',
         "inverterManufacturer": '',
-        "invertersComposition": inverters,
+        "invertersComposition": '',
         "panelType": '',
         "panelManufacture": '',
         "panelModel": '',
@@ -42,32 +42,32 @@ export default function FormProposal () {
             <Header />
             <Container>
                 <Form onSubmit={ (e) => submitForm(e) }>
-                    <Label text='Cliente' >
+                    <Label title='Cliente' >
                         <input type='text' placeholder='Nome' required />
                         <input type='text' placeholder='Telefone' required />
                         <input type='email' placeholder='E-mail' required />
                     </Label>
-                    <Label text='Local de instalação' >
+                    <Label title='Local de instalação' >
                         <input type='text' placeholder='Consumo médio' required />
                         <input type='text' placeholder='Tipo de telhado' required />
                         <input type='text' placeholder='Localização' required />
                     </Label>
-                    <Label text='Inversor' >
+                    <Label title='Inversor' >
                         <input type='text' placeholder='Tipo' required />
                         <input type='text' placeholder='Fabricante' required />
-                        <Label text='Grupo 1' internal={true} >
+                        <Label title='Grupo 1' internal={true} >
                             <input type='text' placeholder='Modelo' required />
                             <input type='text' placeholder='Quantidade' required />
                             <input type='text' placeholder='Potência (kW)' required />
                         </Label>
                     </Label>
-                    <Label text='Módulos' > 
+                    <Label title='Módulos' > 
                         <input type='text' placeholder='Tipo' required />
                         <input type='text' placeholder='Fabricante' required />
                         <input type='text' placeholder='Quantidade' required />
                         <input type='text' placeholder='Potência (W)' required />
                     </Label>
-                    <Label text='Venda' >
+                    <Label title='Venda' >
                         <input type='text' placeholder='Vendedor' />
                         <input type='text' placeholder='Valor do kit' required />
                     </Label>
