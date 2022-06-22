@@ -17,6 +17,7 @@ const Container = styled.div`
     border-radius: 5px;
     position: relative;
     margin-top: 25px;
+    padding-bottom: ${props => props.internal ? '0px' : '5px'};
 
     h2 {
         font-family: 'Lexend Deca';
@@ -28,7 +29,7 @@ const Container = styled.div`
         backface-visibility: hidden;
 
         width: fit-content;
-        margin-left: 5px;
+        margin-left: 15px;
         padding: 0 5px;
 
         position: absolute;
@@ -39,9 +40,15 @@ const Container = styled.div`
         width: 328px;
         height: 40px;
         border: unset;
-        margin: 0 10px;
+        margin: 0px 10px;
+        padding-left: 10px;
         border-bottom: 1px solid #07004d;
         background-color: inherit;
+
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
     }
 
     input::placeholder {
@@ -52,10 +59,27 @@ const Container = styled.div`
     }
 
     & > div > input:first-child {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     & > div > input:last-child {
         border-bottom: 0px;
+    }
+
+    h3 {
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        font-size: 16px;
+        color: #000000;
+
+        margin: 5px 20px;
+        
+        span {
+            font-weight: bold;
+        }
+    }
+
+    & > div > h3:first-child {
+        margin-top: 15px;
     }
 `;
