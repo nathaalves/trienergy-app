@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export default function Label ({title, internal, children}) {
+export default function Label ({title, internal, children, id}) {
 
     return (
-        <Container internal={internal} >
+        <Container internal={internal} id={id}>
             <h2>{ title }</h2>
             <div>{ children }</div>
         </Container>
